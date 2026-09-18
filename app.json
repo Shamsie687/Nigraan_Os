@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "NigraanOS",
+    "slug": "nigraanos",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "nigraanos",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0F4C3A"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "pk.nigraanos.app",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Allow NigraanOS to access your microphone for voice reports."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0F4C3A",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "package": "pk.nigraanos.app",
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "RECORD_AUDIO",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "experiments": {
+      "typedRoutes": true
+    },
+    "plugins": [
+      "expo-router",
+      "expo-audio"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "3295b041-e14b-492a-9364-ca2f108d2359"
+      }
+    }
+  }
+}
